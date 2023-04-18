@@ -2,12 +2,20 @@ import java.util.ArrayList;
 
 public class ArrayListTest {
     public static void main(String[] args) {
+       
         ArrayList<String> cars = new ArrayList<String>();
         cars.add("Volvo");
         cars.add("BMW");
         cars.add("Ford");
         cars.add("Mazda");
         System.out.println(cars);
+
+        int randomNum = (int) (Math.random() *5);
+        ArrayList<Integer> location = new ArrayList<Integer>();
+        location.add(randomNum);
+        location.add(randomNum + 1);
+        location.add(randomNum + 2);
+        System.out.println(location);
 
 
         class Friends {
@@ -17,6 +25,7 @@ public class ArrayListTest {
         ArrayList<Friends> myFriends = new ArrayList<Friends>();
         Friends Friend1 = new Friends();
         Friend1.FriendsName = "Rachel";
+        
         Friends Friend2 = new Friends();
         Friend2.FriendsName = "Joey";
         Friends Friend3 = new Friends();
